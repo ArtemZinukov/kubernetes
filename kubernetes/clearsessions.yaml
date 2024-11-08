@@ -5,11 +5,11 @@ metadata:
 spec:
   schedule: "0 * * * *"
   startingDeadlineSeconds: 200
-  ttlSecondsAfterFinished: 100
   successfulJobsHistoryLimit: 5
   failedJobsHistoryLimit: 2
   jobTemplate:
     spec:
+      ttlSecondsAfterFinished: 100
       template:
         spec:
           containers:
